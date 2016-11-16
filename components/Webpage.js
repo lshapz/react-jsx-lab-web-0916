@@ -1,11 +1,17 @@
 const React = require('react');
 
+const FillerText = require('./FillerText');
 
 class Webpage extends React.Component {
-  render(){
-    React.createElement('title', {}, ["The world's coolest webpage", 
-      FillerText, FillerText]
-      )
-  }}
+  render() {
+    return (
+      <div>
+        <h1>The world's coolest webpage</h1>
+        <FillerText />
+        <FillerText />
+      </div>
+    );
+  }
+}
 
-    module.exports = Webpage;
+module.exports = Webpage;
