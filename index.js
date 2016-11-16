@@ -15,17 +15,13 @@
 
 const React = require('react');
 const ReactDOM = require('react-dom');
-
+const JSX = require('jsx')
 const RegistrationForm = require('./components/RegistrationForm');
 const Webpage = require('./components/Webpage');
 
 ReactDOM.render(
-  (
-    <div>
-      <RegistrationForm />
-      <Webpage />
-    </div>
-  ),
+  React.createElement('div', {}, [RegistrationForm, 
+      Webpage])
   document.getElementById('main')
 );
 

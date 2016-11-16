@@ -1,17 +1,17 @@
 const React = require('react');
 
 class RegistrationForm extends React.Component {
-  render(){
-    React.createElement('form', {action: '/register', method: 'POST'}, 
-      [React.createElement('input', {type: 'text'}), 
-      React.createElement('input', {type:'password'}), 
-      React.createElement('button', {type:'submit'})]
-
-
-      )
-
-
+  render() {
+    return (
+      <form>
+        <label>Username</label>
+        <input type="text" />
+        <label>Password</label>
+        <input type="password" />
+        <button type="submit">Register</button>
+      </form>
+    );
   }
 }
 
-  module.exports = RegistrationForm;
+module.exports = RegistrationForm;
